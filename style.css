@@ -1,0 +1,276 @@
+:root {
+  --primary-color: #8D6E63;
+  --background-color: #FAF3E0;
+  --text-color: #333333;
+  --accent-color: #81C784;
+}
+
+
+/* ALL PAGES */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* ✅ konten ngisi ruang, footer ke bawah */
+}
+
+
+/* Navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #8D6E63, #A1887F);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Optional: kasih emoji atau icon buku */
+.navbar-brand::before {
+  content: "📘";
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+  color: #fff !important;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-color);
+  transition: 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--accent-color) !important;
+  font-weight: 600;
+}
+
+
+
+/* INDEX.HTML */
+#index{
+  background-image:url('Bg-index.png') ;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+
+/* Hero */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: white;
+}
+
+
+/* About us */
+.about-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 10px 30px;
+  border-radius: 30% 0 30% 0;
+  border: 10px var(--accent-color) solid;
+  text-align: center;
+  align-items: center;
+}
+
+.about-section h2 {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+
+
+
+/* CTA section */
+.cta-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 80px 0;
+  margin: 10px;
+  border-radius: 30px;
+  border: 5px var(--accent-color) solid;
+  margin-top: 40px;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  background-color: var(--accent-color);
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #66bb6a;
+  transform: translateY(-2px);
+}
+
+.btn-outline-cta {
+  background-color: var(--accent-color);
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline-cta:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+/* contact */
+.contact-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 40px;
+  border-radius: 50px 0 50px 0;
+  border: 2px var(--accent-color) solid;
+}
+
+.btn-contact {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #66bb6a;
+  color: #fff;
+}
+
+.contact-info i {
+  font-size: 1.2rem;
+}
+
+/* footer */
+.footer-section {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.footer-section a {
+  color: var(--accent-color);
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #66bb6a;
+  text-decoration: underline;
+}
+
+/* SISWA */
+#siswa{
+  background-image:url('Bg-siswa.png') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.form-brand{
+  color: white;
+  
+}
+
+/* DATA BUKU */
+#buku{
+  background-image:url('Bg-buku.png') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* tabel buku + siswa */
+.table {
+  z-index: 10;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transition: 0.3s;
+}

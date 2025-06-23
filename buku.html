@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Buku | E-Library 7arzz</title>
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="buku">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">E-Library</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="siswa.html">Data Siswa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Data Buku</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container py-5" data-aos="fade-up">
+    <h2 class="text-center text-primary fw-bold mb-4">📖 Data Buku</h2>
+
+    <!-- Tabel Buku -->
+    <div class="table-responsive mb-4">
+      <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark text-center">
+          <tr>
+            <th>No</th>
+            <th>Judul</th>
+            <th>Penulis</th>
+            <th>Stok</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="bukuTableBody">
+          <!-- Data dari JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Login Admin -->
+    <div id="loginSection" class="mb-5">
+      <form id="adminLoginForm" class="row g-3 justify-content-end">
+        <div class="col-md-4">
+          <input type="password" id="adminPassword" class="form-control" placeholder="Masukkan Password Admin" required />
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-warning w-100">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Form Admin Tambah Buku -->
+    <div id="bookSection" style="display: none;">
+      <h4 class="fw-semibold mb-3">Tambah Buku</h4>
+      <form id="bookForm" class="row g-3">
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="judul" placeholder="Judul Buku" required />
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="pengarang" placeholder="Penulis" required />
+        </div>
+        <div class="col-md-2">
+          <input type="number" class="form-control" id="stok" placeholder="Stok" required />
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-success w-100">Tambah</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-section text-center py-3 mt-auto fixed-bottom">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 <strong>E-Library 7arzz</strong>. All rights reserved.</p>
+      <p class="text-muted small">Made with ❤️ by <a href="https://github.com/7arzz" target="_blank" class="fw-bold text-decoration-none">7arzz</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="buku.js" defer></script>
+</body>
+</html>
